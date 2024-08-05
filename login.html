@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Student Profile</h1>
+    <h2>GraphQL</h2>
+  </header>
+  <main>
+    <form id="loginForm">
+      <label for="identifier">Username/Email:</label>
+      <input type="text" id="identifier" aria-label="Username or Email" /><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" aria-label="Password" /><br><br>
+      <button id="loginButton">Login</button><br><br>
+    </form>
+    <div id="profilePage" style="display: none;">
+      <h2>Student Information</h2>
+      <p id="userId"></p>
+      <!--<p id="type"></p>-->
+      <div class="statistics">
+        <h2>Technical Skills</h2>
+        <div id="firstBarChart">
+      </div>
+
+      <div class="technos">
+        <h2>Technologies</h2>
+        <div id="secondBarChart">
+      
+      </div>
+        <button id="logoutButton">Logout</button>
+      </div>
+    </div>
+  </main>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

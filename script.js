@@ -36,7 +36,7 @@ function logout() {
   localStorage.removeItem('token'); // Remove the token from local storage
 
   // Redirect to the login page or perform any other necessary cleanup
-  window.location.href = 'login.html'; // Adjust the URL based on your project structure
+  window.location.href = 'index.html'; // Adjust the URL based on your project structure
 }
 
 // Asynchronous function to handle user login
